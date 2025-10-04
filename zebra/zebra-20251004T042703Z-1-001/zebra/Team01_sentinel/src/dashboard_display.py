@@ -32,11 +32,12 @@ def display_dashboard():
         
         print(f"\n📈 INVENTORY ANALYSIS")
         print("-" * 40)
-        summary = inventory_report.get('trends', {}).get('inventory_summary', {})
-        print(f"Initial Inventory: {summary.get('initial_total', 0):,} items")
-        print(f"Final Inventory: {summary.get('final_total', 0):,} items")
+        summary = inventory_report.get('summary', {})
+        print(f"Initial Inventory: {summary.get('initial_inventory', 0):,} items")
+        print(f"Final Inventory: {summary.get('final_inventory', 0):,} items")
         print(f"Net Change: {summary.get('net_change', 0):,} items")
-        print(f"Shrinkage Rate: {abs(summary.get('net_change', 0)) / summary.get('initial_total', 1) * 100:.2f}%")
+        shrinkage_rate = abs(summary.get('net_change', 0)) / max(summary.get('initial_inventory', 1), 1) * 100
+        print(f"Shrinkage Rate: {shrinkage_rate:.2f}%")
         
         print(f"\n🚨 TOP FRAUD ALERTS")
         print("-" * 40)
