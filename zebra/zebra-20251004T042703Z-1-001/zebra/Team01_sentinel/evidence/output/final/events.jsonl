@@ -1,0 +1,2 @@
+{"timestamp": "2025-08-13T17:10:00", "event_type": "INVENTORY_SHRINKAGE", "location": "STORE_FLOOR", "severity": "medium", "confidence": 0.8, "description": "Inventory decrease of 8.6% for PRD_T_04"}
+{"timestamp": "2025-08-13T17:50:00", "event_type": "INVENTORY_SHRINKAGE", "location": "STORE_FLOOR", "severity": "medium", "confidence": 0.8, "description": "Inventory decrease of 7.0% for PRD_F_04"}
