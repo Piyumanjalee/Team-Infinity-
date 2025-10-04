@@ -1,0 +1,23 @@
+{
+  "analysis_timestamp": "2025-10-04T12:57:19.151314",
+  "data_source": "data/input/pos_transactions.jsonl",
+  "weight_discrepancies": [
+    {
+      "timestamp": "2025-08-13T16:16:40",
+      "customer_id": "C044",
+      "station_id": "SCC1",
+      "product_name": "Coca-Cola (1.5L)",
+      "expected_weight": 1500.0,
+      "actual_weight": 913.68,
+      "weight_difference_pct": 39.08800000000001,
+      "severity": "MEDIUM"
+    }
+  ],
+  "summary": {
+    "total_transactions": 252,
+    "unique_customers": 55,
+    "total_revenue": 94260.0,
+    "weight_discrepancies_count": 1,
+    "high_severity_discrepancies": 0
+  }
+}

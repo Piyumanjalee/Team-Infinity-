@@ -70,7 +70,7 @@ def display_dashboard():
         print(f"\n❌ Error loading analysis results: {e}")
     
     print("\n" + "="*80)
-    print("SYSTEM READY FOR SUBMISSION")
+    print("SYSTEM READY")
     print("="*80)
 
 if __name__ == "__main__":
